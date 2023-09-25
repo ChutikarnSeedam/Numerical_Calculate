@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import style from './App.css';
+import index from './components/index';
+import home from './components/Home';
+import login from './components/Login';
+import bisection from './components/roots_of_equation/Bisection';
+import root_of_equation_main from './components/roots_of_equation/Root-of-quation-main';
+import newton_raphson from './components/roots_of_equation/Newton_Raphson';
+import secant from './components/roots_of_equation/Secant';
+import false_position from './components/roots_of_equation/False_Position';
+import onepoint from './components/roots_of_equation/Onepoint_Iteration';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import Navbar from './components/Navbar';
+
+class App extends Component {
+  render() {
+    return (
+        <div>
+            <Routes>
+              <Route exact path='/' Component={index}/>
+              <Route path='/login' Component={login}/>
+              <Route path='/home' Component={home}/>
+              <Route path='/bisection' Component={bisection}/>
+              <Route path='/false-position' Component={false_position} />
+              <Route path='/root-of-equation' Component={root_of_equation_main}/>
+              <Route path='/newton-raphson' Component={newton_raphson}/>
+              <Route path='/onepoint-iteration' Component={onepoint} />
+              <Route path='/secant' Component={secant}/>
+            </Routes> 
+        </div>
+    );
+  }
 }
-
 export default App;
