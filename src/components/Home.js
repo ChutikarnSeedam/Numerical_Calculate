@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import root_of_equation_main from './roots_of_equation/Root-of-quation-main'
 
+
+
 function home() {
     return (
         <div>Home page
