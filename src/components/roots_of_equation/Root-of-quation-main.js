@@ -8,6 +8,9 @@ function root_of_equation_main() {
         <Link to="/bisection">
             <button>bisection</button>
         </Link>
+        <Link to="/bisection2">
+            <button>bisection2</button>
+        </Link>
         <Link to="/false-position">
             <button>false position</button>
         </Link>
