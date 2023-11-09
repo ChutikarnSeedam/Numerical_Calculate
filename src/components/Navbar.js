@@ -11,17 +11,16 @@ function Navbar() {
     <nav>
         <ul className={style.Navmenu}>
             <li className={style.categoryMenu} onClick={toggleDropdown}>
-                categories
+                Course
             </li>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/Status">Status</Link></li>
-            <li><Link to="/Cart">Cart</Link></li>
-            <li><Link to="/SignIn">Sign In</Link> <Link to="/SignUp"> | Sign Up</Link></li>
+            <li><Link to="/Status">AboutMe</Link></li>
+            <li><Link to="/SignIn">Sign Out</Link></li>
         </ul>
         {isOpen && (
           <ul className={style.dropdownmenu}>
-            <li><Link to="/categ1">Category1</Link></li>
-            <li><Link to="/categ2">Category2</Link></li>
+            <li><Link to="/root-of-equation">Root of equation</Link></li>
+            <li><Link to="/Solution-Techniques-main">Solution Techniques</Link></li>
             <li><Link to="/categ3">Category3</Link></li>
           </ul>
         )}
