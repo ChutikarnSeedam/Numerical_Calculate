@@ -22,6 +22,9 @@ function Solution_Techniques_main() {
                 <Link to="/LU-Decomposition-Method">
                     <button>LU Decomposition Method</button>
                 </Link>
+                <Link to="/Integrate">
+                    <button>Integrate</button>
+                </Link>
             </div>
     </div>
     ); 

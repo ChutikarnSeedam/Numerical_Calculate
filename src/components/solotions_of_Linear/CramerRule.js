@@ -1,6 +1,37 @@
 import React, { useState } from "react";
 
 function CramerRule() {
+
+        // var Result = CramerRule(matrixA ,matrixB);
+        // console.log(Result);
+        //   // Matrix output is here
+        
+        // function CramerRule(matrix,matrixB) {
+        //   var det = detr(matrixA),
+        //       returnArray =[],
+        //       i,
+        //       tmpMatrix;
+
+        //   for(i=0;i<matrix;i++) {
+        //     var tmpMatrix = insertInTerms(matrix,matrixB)
+
+        //   }
+
+        // }
+
+        // function insertInTerms(matrix, ins, at){
+        //   //Matrix Transfer
+        // }
+
+        // function detr(){
+        //   //Matrix --> det
+        // } 
+
+        // function clone(paramiter) {
+
+        // }
+
+        //-------Start Matrix Part------
         const [matrixA, setMatrixA] = useState([]);
         const [matrixB, setMatrixB] = useState([]);
         const [numRowsA, setNumRowsA] = useState(2); // จำนวนแถวของ A
@@ -41,7 +72,7 @@ function CramerRule() {
 
       return (
         <div>
-          <h2>Dynamic Matrices A and B</h2>
+          <h2>Choose your Matrix size</h2>
           <div>
             <h3>Matrix A</h3>
             <label>Number of Rows:</label>
@@ -50,6 +81,7 @@ function CramerRule() {
               value={numRowsA}
               onChange={(e) => setNumRowsA(Number(e.target.value))}
             />
+
             <label>Number of Columns:</label>
             <input
               type="number"
@@ -58,6 +90,8 @@ function CramerRule() {
             />
             <button onClick={createMatrixA}>Create Matrix A</button>
           </div>
+
+          //Input Matrix B
           <div>
             <h3>Matrix B</h3>
             <label>Number of Rows:</label>
@@ -74,6 +108,8 @@ function CramerRule() {
             />
             <button onClick={createMatrixB}>Create Matrix B</button>
           </div>
+
+          
           <table>
             <tbody>
               <tr>

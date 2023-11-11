@@ -12,6 +12,7 @@ import onepoint from './components/roots_of_equation/Onepoint_Iteration';
 import Navbar from './components/Navbar';
 import Solution_Techniques_main from './components/solotions_of_Linear/main_menu';
 import CramerRule from './components/solotions_of_Linear/CramerRule';
+import Integrate from './components/solotions_of_Linear/Integrate';
 
 class App extends Component {
   render() {
@@ -34,6 +35,7 @@ class App extends Component {
                 <Route path='/Metrix-Inversion-method' Component={onepoint} />
                 <Route path='/LU-Decomposition-Method' Component={onepoint} />
                 <Route path='/Solution-Techniques-main' Component={Solution_Techniques_main} />
+                <Route path='/Integrate' Component={Integrate}/>
               </Routes> 
           </div>
         </div>

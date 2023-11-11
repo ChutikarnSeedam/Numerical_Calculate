@@ -15,7 +15,7 @@ const Bisection = () =>{
 
         return(
             <Container>
-                <Table striped bordered hover variant="dark">
+                <Table>
                     <thead>
                         <tr>
                             <th  width="10%">Iteration</th>
@@ -43,7 +43,7 @@ const Bisection = () =>{
                         <CartesianGrid stroke="#eee" strokeDasharray="5 5"/>
                         <Line type="data" dataKey="Xl" stroke="#8884d8" />
                         <Line type="data" dataKey="Xm" stroke="#82ca9d" />
-                        <Line type="data" dataKey="Xr" stroke="#000" />
+                        <Line type="data" dataKey="Xr" stroke="#FF2D00" />
                     </LineChart>
             </Container>
         );
